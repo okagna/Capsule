@@ -24,7 +24,6 @@ export default function ZonePhoto() {
           <Ionicons name="chevron-back" size={22} color="#1E1B4B" />
         </Pressable>
 
-        <Text style={styles.titre}>Nouvelle capsule</Text>
 
         <View style={{ width: 44 }} />
       </View>
@@ -43,6 +42,7 @@ export default function ZonePhoto() {
 }
 
 const styles = StyleSheet.create({
+  container: {},
   entete: {
     flexDirection: 'row',
     alignItems: 'center',
@@ -63,8 +63,8 @@ const styles = StyleSheet.create({
   },
 
   zonePhoto: {
-    top:25,
-    height: '47%',
+    marginTop: 20,
+    height: 180,
     borderRadius: 28,
     borderWidth: 2,
     borderStyle: 'dashed',

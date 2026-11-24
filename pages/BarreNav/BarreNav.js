@@ -2,7 +2,7 @@ import { StyleSheet, View, Pressable } from 'react-native';
 import { Ionicons, AntDesign } from '@expo/vector-icons';
 
 const ONGLETS = [
-  { id: 'capsules', lib: AntDesign, icone: 'cloud' },
+  { id: 'capsules', lib: Ionicons, icone: 'hourglass-outline' },
   { id: 'amis', lib: Ionicons, icone: 'people' },
   { id: 'creer', lib: Ionicons, icone: 'add' },
 ];

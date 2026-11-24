@@ -17,11 +17,7 @@ export default function ZonePourQui() {
         {OPTIONS.map((option) => {
           const actif = choix === option.id;
           return (
-            <Pressable
-              key={option.id}
-              onPress={() => setChoix(option.id)}
-              style={[styles.bouton, actif && styles.boutonActif]}
-            >
+            <Pressable key={option.id} onPress={() => setChoix(option.id)} style={[styles.bouton, actif && styles.boutonActif]}>
               <Text style={[styles.texte, actif && styles.texteActif]}>
                 {option.label}
               </Text>

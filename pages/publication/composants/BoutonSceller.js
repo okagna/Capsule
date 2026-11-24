@@ -1,11 +1,11 @@
 import { StyleSheet, Text, Pressable } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 
-export default function BoutonSceller() {
+export default function BoutonSceller({ onPress }) {
   return (
-    <Pressable style={styles.bouton} onPress={() => console.log('Capsule scellée !')}>
-      <Ionicons name="hourglass-outline" size={22} color="#fff" />
-      <Text style={styles.texte}>Sceller la capsule</Text>
+    <Pressable style={styles.bouton} onPress={onPress}>
+      <Text style={styles.texte}>Continuer</Text>
+      <Ionicons name="arrow-forward" size={22} color="#fff" />
     </Pressable>
   );
 }
@@ -24,6 +24,7 @@ const styles = StyleSheet.create({
     shadowRadius: 16,
     shadowOffset: { width: 0, height: 8 },
     elevation: 8,
+    bottom:'45%'
   },
   texte: { fontSize: 17, fontWeight: '700', color: '#fff' },
 });
